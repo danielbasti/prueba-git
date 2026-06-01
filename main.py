@@ -18,8 +18,8 @@ while True:
         if len(tareas) == 0:
             print("no ahi tareas")
         else:
-            for tarea in tareas:
-                print("-",tarea)
+            for i, tarea in enumerate(tareas, start=1):
+                print(f"{i}. {tarea}")
 
     elif opcion == "2":
         tarea = input("nueva tarea: ")
